@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+
+{% block main %}
+    <div id="parent">
+
+        <div id="page">
+            
+            <div id="heading">
+                <img src="{{ url_for('static', filename='profile_avatar.png') }}">
+                <h2>Swayne James</h2>
+                <p>@sjames</p>
+                <p>Kingston, Jamaica</p>
+                <p>{{now}}</p>
+            </div>
+
+            <div id="info">
+                <p>I am smart and talented young man who loves website design and development.
+                    Coontact me if you'd like to work together on a new project.
+                </p>
+
+                <div id="data">
+                    <div>
+                        <p class="bold">7</p>
+                        <p>Posts</p>
+                    </div>
+
+                    <div>
+                        <p class="bold">100</p>
+                        <p>Following</p>
+                    </div>
+
+                    <div>
+                        <p class="bold">250</p>
+                        <p>Followers</p>
+                    </div>
+
+                </div>
+
+                <button type="button">Follow</button>
+
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
